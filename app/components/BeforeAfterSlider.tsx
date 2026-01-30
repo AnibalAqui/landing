@@ -1,6 +1,8 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import Image from "next/image";
+import { useState, useRef, useEffect, lazy } from "react";
+import { useImage } from "../hooks/img-loading";
 
 interface BeforeAfterSliderProps {
   beforeImage: string;
@@ -84,6 +86,14 @@ export default function BeforeAfterSlider({
     }
   }, [isDragging]);
 
+  const imgBefore = useImage({
+    fileName: beforeImage,
+  });
+
+  const imgAfter = useImage({
+    fileName: afterImage,
+  });
+
   return (
     <div
       ref={containerRef}
@@ -94,12 +104,17 @@ export default function BeforeAfterSlider({
     >
       {/* Before Image (Background) */}
       <div className="absolute inset-0 w-full h-full">
-        <img
-          src={beforeImage}
-          alt={beforeLabel}
-          className="w-full h-full object-cover"
-          draggable={false}
-        />
+        {!imgBefore.img || imgBefore.loading ? (
+          <p className="text-amber-950 text-center my-20">Loading...</p>
+        ) : (
+          <Image
+            src={imgBefore.img}
+            alt={beforeLabel}
+            className="w-full h-full object-cover"
+            draggable={false}
+            loading="eager"
+          />
+        )}
         <div className="absolute top-4 left-4 bg-black/50 px-3 py-1 rounded text-white text-sm font-semibold">
           {beforeLabel}
         </div>
@@ -110,12 +125,17 @@ export default function BeforeAfterSlider({
         className="absolute inset-0 w-full h-full overflow-hidden"
         style={{ width: `${sliderPosition}%` }}
       >
-        <img
-          src={afterImage}
-          alt={afterLabel}
-          className="w-full h-full object-cover"
-          draggable={false}
-        />
+        {!imgAfter.img || imgAfter.loading ? (
+          <p className="text-amber-950 text-center my-20">Loading...</p>
+        ) : (
+          <Image
+            src={imgAfter.img}
+            alt={afterLabel}
+            className="w-full h-full object-cover"
+            draggable={false}
+            loading="eager"
+          />
+        )}
         <div className="absolute top-4 right-4 bg-black/50 px-3 py-1 rounded text-white text-sm font-semibold">
           {afterLabel}
         </div>

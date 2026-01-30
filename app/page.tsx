@@ -114,8 +114,8 @@ export default function Home() {
         <div className="h-16 bg-linear-to-t from-white to-transparent mt-5"></div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-20 gap-x-5 px-10 md:px-60 bg-white ">
           <BeforeAfterSlider
-            beforeImage="/assets/glow-up-abelardo-aqui-arroyo-before.jpeg"
-            afterImage="/assets/glow-up-abelardo-aqui-arroyo-after.jpeg"
+            beforeImage="glow-up-abelardo-aqui-arroyo-before.jpeg"
+            afterImage="glow-up-abelardo-aqui-arroyo-after.jpeg"
             beforeLabel="BEFORE"
             afterLabel="AFTER"
           />
@@ -131,8 +131,8 @@ export default function Home() {
             </p>
           </div>
           <BeforeAfterSlider
-            beforeImage="/assets/glow-up-abelardo-aqui-arroyo-before.jpeg"
-            afterImage="/assets/glow-up-abelardo-aqui-arroyo-after.jpeg"
+            beforeImage="glow-up-abelardo-aqui-arroyo-before.jpeg"
+            afterImage="glow-up-abelardo-aqui-arroyo-after.jpeg"
             beforeLabel="BEFORE"
             afterLabel="AFTER"
             className="lg:hidden"
@@ -147,8 +147,8 @@ export default function Home() {
             </ul>
           </div>
           <BeforeAfterSlider
-            beforeImage="/assets/glow-up-anibal-aqui-before.jpeg"
-            afterImage="/assets/glow-up-anibal-aqui-after.jpeg"
+            beforeImage="glow-up-anibal-aqui-before.jpeg"
+            afterImage="glow-up-anibal-aqui-after.jpeg"
             beforeLabel="BEFORE"
             afterLabel="AFTER"
             className="hidden lg:block"
