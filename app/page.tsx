@@ -2,6 +2,8 @@
 
 import BeforeAfterSlider from "@/app/components/BeforeAfterSlider";
 
+const mails = ["business@abelardo-aqui-arroyo.dev", "anibalitoaqui@gmail.com"];
+
 const ContactSection = (prop: { style?: string }) => {
   return (
     <div
@@ -10,7 +12,10 @@ const ContactSection = (prop: { style?: string }) => {
         (prop.style !== undefined ? prop.style : "")
       }
     >
-      <button className="relative border border-pink-600/90 bg-pink-700/60  rounded-lg px-1 my-0.5 cursor-pointer flex flex-row gap-1 items-center">
+      <a
+        href={`mailto:${mails.join()}`}
+        className="relative border border-pink-600/90 bg-pink-700/60  rounded-lg px-1 my-0.5 cursor-pointer flex flex-row gap-1 items-center"
+      >
         <span className="absolute -top-1.5 -left-2 inline-flex size-3 rounded-full bg-green-500">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
         </span>
@@ -24,7 +29,7 @@ const ContactSection = (prop: { style?: string }) => {
           <path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
         </svg>
         <p className="text-white font-medium">Mail</p>
-      </button>
+      </a>
       <button className="relative border border-pink-600/90 bg-pink-700/60  rounded-lg px-1 my-0.5 cursor-pointer flex flex-row gap-1 items-center">
         <span className="absolute -top-1.5 -left-2 inline-flex size-3 rounded-full bg-green-500">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
@@ -47,7 +52,7 @@ const ContactSection = (prop: { style?: string }) => {
           className="text-white font-medium"
           href="https://www.linkedin.com/in/anibal-aqui/"
         >
-          LinkedIn
+          LinkedIn Anibal
         </a>
       </button>
       <button className="relative border border-pink-600/90 bg-pink-700/60  rounded-lg px-1 my-0.5 cursor-pointer flex flex-row gap-1 items-center">
@@ -72,7 +77,7 @@ const ContactSection = (prop: { style?: string }) => {
           className="text-white font-medium"
           href="https://www.linkedin.com/in/abelardo-aqui-arroyo-dev/"
         >
-          LinkedIn
+          LinkedIn Abel
         </a>
       </button>
     </div>
@@ -95,13 +100,13 @@ export default function Home() {
       <div className="flex flex-col bg-size-[32px_32px] bg-[radial-gradient(#808080_1px,transparent_1px)]">
         <div className="px-3 lg:px-60 mt-16">
           <h1 className="text-5xl lg:text-7xl font-bold text-white mb-2 text-center">
-            See the <br />
+            The <br />
             <span
               className="inline-block text-5xl lg:text-6xl font-bold
       bg-linear-to-r from-purple-500 to-pink-600
       bg-clip-text text-transparent"
             >
-              Transformation.
+              Glow-up Prompt
             </span>
           </h1>
           <ContactSection style="mt-10" />
