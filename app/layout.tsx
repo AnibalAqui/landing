@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: "Landing",
     images: [
       {
-        url: "https://glow-up.anibal-aqui.com/the-glow-up-prompt.jpeg",
+        url: "https://res.cloudinary.com/tecabel/image/upload/v1769811385/the-glow-up-prompt_g5lhyg.png",
         width: 1200,
         height: 630,
         alt: "Preview site",
