@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useRef, useEffect, lazy } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useImage } from "../hooks/img-loading";
 
 interface BeforeAfterSliderProps {

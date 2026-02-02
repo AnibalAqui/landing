@@ -31,53 +31,43 @@ const ContactSection = (prop: { style?: string }) => {
         <p className="text-white font-medium">Mail</p>
       </a>
       <button className="relative border border-pink-600/90 bg-pink-700/60  rounded-lg px-1 my-0.5 cursor-pointer flex flex-row gap-1 items-center">
-        <span className="absolute -top-1.5 -left-2 inline-flex size-3 rounded-full bg-green-500">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+        <span className="absolute -top-1.5 -left-2 inline-flex size-3 rounded-full ">
+          <svg
+            className=" text-green-400"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            fill="currentColor"
+          >
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
         </span>
-        <svg
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          className="size-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13"
-          />
-        </svg>
 
         <a
           className="text-white font-medium"
           href="https://www.linkedin.com/in/anibal-aqui/"
         >
-          LinkedIn Anibal
+          Anibal
         </a>
       </button>
       <button className="relative border border-pink-600/90 bg-pink-700/60  rounded-lg px-1 my-0.5 cursor-pointer flex flex-row gap-1 items-center">
-        <span className="absolute -top-1.5 -left-2 inline-flex size-3 rounded-full bg-green-500">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+        <span className="absolute -top-1.5 -left-2 inline-flex size-3 rounded-full ">
+          <svg
+            className=" text-green-400"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            fill="currentColor"
+          >
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
         </span>
-        <svg
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          className="size-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13"
-          />
-        </svg>
 
         <a
           className="text-white font-medium"
           href="https://www.linkedin.com/in/abelardo-aqui-arroyo-dev/"
         >
-          LinkedIn Abel
+          Abel
         </a>
       </button>
     </div>
