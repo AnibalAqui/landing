@@ -127,8 +127,8 @@ export default function Home() {
             </p>
           </div>
           <BeforeAfterSlider
-            beforeImage="glow-up-abelardo-aqui-arroyo-before.jpeg"
-            afterImage="glow-up-abelardo-aqui-arroyo-after.jpeg"
+            beforeImage="glow-up-anibal-aqui-before.jpeg"
+            afterImage="glow-up-anibal-aqui-after.jpeg"
             beforeLabel="BEFORE"
             afterLabel="AFTER"
             className="lg:hidden"
